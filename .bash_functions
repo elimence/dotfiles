@@ -9,8 +9,8 @@ mkd() {
 }
 
 # help menu
-df-help() {
-}
+# df-help() {
+# }
 
 
 
