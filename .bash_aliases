@@ -20,4 +20,4 @@ alias pbpaste='xclip -selection clipboard -o'
 
 ### *************** HELP ALIASES ***************
 
-alias edx-update_script="sh ~/edx-dotfiles/update.sh"
+alias df-update_script="sh ~/dotfiles/update.sh"

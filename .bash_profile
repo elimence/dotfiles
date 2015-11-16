@@ -62,4 +62,3 @@ export PATH=$HOME/bin:$PATH
 export PATH=/usr/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
-# export PATH=/edx/bin:$PATH # Doesnt seem like a good idea :)

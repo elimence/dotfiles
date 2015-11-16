@@ -5,27 +5,27 @@ current_directory="$PWD"
 
 # git pull and install dotfiles as well
 cd $HOME
-if [ ! -d ./edx-dotfiles/ ]; then
-    git clone https://github.com/elimence/edx-dotfiles.git
-    ln -sb edx-dotfiles/.screenrc .
-    ln -sb edx-dotfiles/.bash_profile .
-    ln -sb edx-dotfiles/.bashrc .
-    ln -sb edx-dotfiles/.bashrc_custom .
-    ln -sb edx-dotfiles/.bash_aliases .
-    ln -sb edx-dotfiles/.bash_functions .
+if [ ! -d ./dotfiles/ ]; then
+    git clone https://github.com/elimence/dotfiles.git
+    ln -sb dotfiles/.screenrc .
+    ln -sb dotfiles/.bash_profile .
+    ln -sb dotfiles/.bashrc .
+    ln -sb dotfiles/.bashrc_custom .
+    ln -sb dotfiles/.bash_aliases .
+    ln -sb dotfiles/.bash_functions .
 fi
 
 
-# Check and update edx-dotfiles if need be
-cd ~/edx-dotfiles
+# Check and update dotfiles if need be
+cd ~/dotfiles
 git fetch origin
 reslog=$(git log HEAD..origin/master --oneline)
 
 if [ "${reslog}" != "" ] ; then
     git merge origin/master # completing the pull
-    echo "successfully updated edx-dotfiles!"
+    echo "successfully updated dotfiles!"
 else
-    echo "edx-dotfiles is already up to date"
+    echo "dotfiles is already up to date"
 fi
 
 
